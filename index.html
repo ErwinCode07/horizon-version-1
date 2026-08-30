@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Horizon - Websites for Startups</title>
+
+    <!-- Fonts: a warm serif for headlines, a geometric sans for body text, a mono face for labels -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="site-header" id="siteHeader">
+        <div class="wrap header-inner">
+            <a href="#top" class="logo" aria-label="Horizon home">
+                <span class="logo-mark" aria-hidden="true"></span>
+                Horizon
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#templates">Templates</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact" class="nav-cta">Start a Project</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="hero" id="hero">
+            <div class="wrap hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Website studio &amp; WaaS</p>
+                    <h1>Every good site <br>needs a <em>horizon</em> <br>to grow toward.</h1>
+                    <p class="hero-sub">
+                        We build, design, and optimize websites - then keep them improving as a service. Or start faster with a template we've already shaped for you.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Start a project</a>
+                        <a href="#template" class="btn btn-ghost">Browse templates</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="horizon-svg" id="horizonSvg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="skyGradient" x1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#1b2440" />
+                                <stop offset="100%" stop-color="#0d1321" />
+                            </linearGradient>
+                            <linearGradient id="sunGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#ffc65c" />
+                                <stop offset="100%" stop-color="#ff7a59" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="600" height="500" fill="url(#skyGradient)" />
+                        <circle id="horizon" cx="300" cy="420" r="70" fill="url(#sunGradient)" />
+                        <path d="M 0 360 Q 300 300 600 360 L 600 500 L 0 500 Z" fill="#0d1321" />
+                        <path id="horizonLine" d="M 0 360 Q 300 300 600 360" fill="none" stroke="#ffc65c" stroke-width="2" opacity="0.6" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services" id="services">
+            <div class="wrap">
+                <p class="eyebrow">What we do</p>
+                <h2>Five ways to move your site forward</h2>
+
+                <div class="service-grid">
+                    <article class="service-card reveal">
+                        <svg class="service-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="28" height="28" rx="3"/><path d="M6 15h28"/><circle cx="11" cy="10.5" r="1"/><circle cx="15" cy="10.5" r="1"/></svg>
+                        <h3>Website creation</h3>
+                        <p>New sites, built from a blank canvas around what your business actually needs.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <svg class="service-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 5 24 16 35 20 24 24 20 35 16 24 5 20 16 16 20 5Z"/></svg>
+                        <h3>Design</h3>
+                        <p>Layouts, type, and color built around your brand — not a theme picked off a shelf.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <svg class="service-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 30 15 18 22 24 35 8"/><path d="M27 8h8v8"/></svg>
+                        <h3>Optimization</h3>
+                        <p>Faster load times, cleaner code, and pages tuned to convert more visitors.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <svg class="service-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="20" cy="20" r="14"/><path d="M20 12v8l6 4"/></svg>
+                        <h3>Website-as-a-Service</h3>
+                        <p>Ongoing edits, hosting, and upkeep on a monthly plan — your site, always current.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <svg class="service-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="8" width="12" height="9"/><rect x="21" y="8" width="14" height="9"/><rect x="5" y="21" width="14" height="11"/><rect x="23" y="21" width="12" height="11"/></svg>
+                        <h3>Template production</h3>
+                        <p>Ready-made layouts you can launch today and make your own in an afternoon.</p>
+                    </article>
+                </div> 
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="wrap">
+            <p class="eyebrow">How it runs</p>
+            <h2>Four steps, start to launch</h2>
+
+            <ol class="process-list">
+                <li class="reveal"><span class="step-num">01</span><div><h3>Discover</h3><p>We ask what the site has to do, for whom, and by when.</p></div></li>
+                <li class="reveal"><span class="step-num">02</span><div><h3>Design</h3><p>Layout and visual direction, shaped around your content — not a placeholder for it.</p></div></li>
+                <li class="reveal"><span class="step-num">03</span><div><h3>Build</h3><p>Real pages, real performance, tested across devices before anyone sees them.</p></div></li>
+                <li class="reveal"><span class="step-num">04</span><div><h3>Launch &amp; optimize</h3><p>We ship it, then keep tuning speed and conversion as traffic comes in.</p></div></li>
+            </ol>
+            </div>
+        </section>
+
+        <section class="templates" id="templates">
+            <div class="wrap">
+            <div class="templates-head">
+                <div>
+                <p class="eyebrow">Template production</p>
+                <h2>Start from something finished</h2>
+                </div>
+                <div class="carousel-controls">
+                <button class="carousel-btn" id="prevTemplate" aria-label="Previous template">&larr;</button>
+                <button class="carousel-btn" id="nextTemplate" aria-label="Next template">&rarr;</button>
+                </div>
+            </div>
+
+            <div class="carousel" id="templateTrack">
+                <article class="template-card">
+                <div class="template-thumb" style="--from:#ff7a59; --to:#ffc65c;"></div>
+                <h3>Storefront</h3>
+                <p>A product-first layout for shops that need to sell from page one.</p>
+                </article>
+                <article class="template-card">
+                <div class="template-thumb" style="--from:#4cd9b0; --to:#0d1321;"></div>
+                <h3>Studio</h3>
+                <p>A quiet, image-forward portfolio for designers and photographers.</p>
+                </article>
+                <article class="template-card">
+                <div class="template-thumb" style="--from:#ffc65c; --to:#ff7a59;"></div>
+                <h3>Ledger</h3>
+                <p>A dense, information-rich layout for finance and consulting sites.</p>
+                </article>
+                <article class="template-card">
+                <div class="template-thumb" style="--from:#9aa3b5; --to:#161d2e;"></div>
+                <h3>Field Notes</h3>
+                <p>A long-form blog and newsletter template built for readers, not scrollers.</p>
+                </article>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="wrap">
+            <p class="eyebrow">Website-as-a-Service</p>
+            <h2>Plans that keep working after launch</h2>
+
+            <div class="billing-toggle">
+                <span>Monthly</span>
+                <button class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+                <span class="switch-knob"></span>
+                </button>
+                <span>Annual <span class="save-badge">save 15%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <article class="price-card">
+                <h3>Starter</h3>
+                <p class="price"><span class="price-amount" data-monthly="49" data-annual="42">$49</span><span class="price-period">/mo</span></p>
+                <p class="price-desc">For a single site that just needs to stay healthy.</p>
+                <ul class="price-features">
+                    <li>1 website</li>
+                    <li>Monthly content edits</li>
+                    <li>Hosting &amp; SSL included</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost">Choose Starter</a>
+                </article>
+
+                <article class="price-card price-card-featured">
+                <p class="price-tag">Most chosen</p>
+                <h3>Growth</h3>
+                <p class="price"><span class="price-amount" data-monthly="129" data-annual="110">$129</span><span class="price-period">/mo</span></p>
+                <p class="price-desc">For a site that's actively bringing in customers.</p>
+                <ul class="price-features">
+                    <li>Up to 3 websites</li>
+                    <li>Weekly content edits</li>
+                    <li>Speed &amp; SEO optimization</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Choose Growth</a>
+                </article>
+
+                <article class="price-card">
+                <h3>Scale</h3>
+                <p class="price"><span class="price-amount" data-monthly="299" data-annual="254">$299</span><span class="price-period">/mo</span></p>
+                <p class="price-desc">For teams shipping new pages every week.</p>
+                <ul class="price-features">
+                    <li>Unlimited websites</li>
+                    <li>Dedicated designer</li>
+                    <li>Custom integrations</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost">Choose Scale</a>
+                </article>
+            </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="wrap footer-inner">
+                <span class="logo"><span class="logo-mark" aria-hidden="true"></span>Horizon</span>
+                <p>&copy; <span id="year"></span> Horizon. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
